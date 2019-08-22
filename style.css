@@ -1,10 +1,61 @@
+html {
+  background-color: lightcyan;
+  text-align: center;
+}
+
+h5 {
+  margin-bottom: 60px;
+}
+
 #calculator {
   display: grid;
   background-color: white;
   border: 2px solid;
+  width: 500px;
+  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
   position: relative;
+  left: 32vw;
 }
 
 #display {
-  background-color: yellowgreen;
+  background-color: rgb(83, 82, 82);
+  color: white;
+  text-align: right;
+  font-size: 32pt;
+  grid-area: 1 / 1 / span 1 / span 4;
+}
+
+.number-key {
+  background-color: rgb(192, 191, 191);
+  color: white;
+  font-size: 20pt;
+}
+
+#clear {
+  background-color: lightsalmon;
+  color: white;
+  font-size: 20pt;
+  grid-area: 3 / 4 / span 1 / span 1;  
+}
+
+.operator-key {
+  background-color: lightsalmon;
+  color: white;
+  font-size: 20pt;
+}
+
+#operate {
+  background-color: lightsalmon;
+  color: white;
+  font-size: 20pt;
+  grid-area: 4 / 4 / span 3 / span 1;
+}
+
+.zero {
+  grid-area: 6 / 1 / span 1 / span 2;
+}
+
+.decimal {
+  grid-area: 6 / 3 / span 1 / span 1;
 }
